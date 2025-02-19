@@ -1,22 +1,15 @@
 |  | Algorithm and Data Structure |
 |--|--|
-| NIM |  1234567|
-| Nama |  You know who |
+| NIM |  244107020230|
+| Nama |  Garino Wijaya |
 | Kelas | TI - 1I |
-| Repository | [link] |  | Algorithm and Data Structure |
-|--|--|
-| NIM |  1234567|
-| Nama |  You know who |
-| Kelas | TI - 1I |
-| Repository | [link] (https://github.com/jti-polinema/-01-contoh-laporan-react) |
+| Repository | https://github.com/Garinowijaya/PRAKALSD |  
 
 # Labs #1 Programming Fundamentals Review
 
 ## 2.1.1. Selection Solution
 
 The solution is implemented in Pemilihan1.java, and below is screenshot of the result.
-
-![Screenshot](img/img1.png)
 
 **Brief explanaton:** There are 4 main step: 
 1. Input all grades
