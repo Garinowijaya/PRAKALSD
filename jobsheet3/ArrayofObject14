@@ -7,10 +7,10 @@ public class ArrayofObject14 {
         System.out.print("Enter number of rectangles: ");
         int n = sc.nextInt();
 
-        Rectangle[] rectanglesArray = new Rectangle[n];
+        Rectangle14[] rectanglesArray = new Rectangle14[n];
 
         for (int i = 0; i < n; i++) {
-            rectanglesArray[i] = new Rectangle();
+            rectanglesArray[i] = new Rectangle14();
             System.out.println("Rectangle " + i);
 
             System.out.print("Input Length: ");
