@@ -1,4 +1,4 @@
-public class ArrayBlocks {
+public class ArrayBlocks14 {
     public static void main(String[] args) {
         Blocks[] blArray = new Blocks[3];
 
