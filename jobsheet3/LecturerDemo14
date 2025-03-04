@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+public class LecturerDemo14 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Lecturer14[] lecturerArray = new Lecturer14[3];
+
+        for (int i = 0; i < 3; i++) {
+            String id, name, gdr;
+            int age;
+            boolean gender = true;  // Default to Male
+
+            System.out.printf("Enter Lecturer Data - %d %n", i + 1);
+            System.out.print("id\t: "); id = sc.nextLine();
+            System.out.print("Name\t: "); name = sc.nextLine();
+            System.out.print("Gender\t: "); gdr = sc.nextLine();
+            System.out.print("Usia\t: "); age = sc.nextInt();
+            sc.nextLine();  // Consume the newline character after reading the integer
+
+            System.out.println("------------------------------");
+
+            // Assign gender based on user input
+            if (gdr.equalsIgnoreCase("female")) {
+                gender = false;
+            }
+
+            // Create and store the Lecturer14 object in the array
+            lecturerArray[i] = new Lecturer14(id, name, gender, age);
+        }
+
+        // Display the data entered
+        System.out.println("Data Dosen yang telah dimasukkan:");
+        for (Lecturer14 lecturer : lecturerArray) {
+            System.out.println("------------------------");
+            System.out.printf("id\t: %s %n", lecturer.getId());
+            System.out.printf("Name\t: %s %n", lecturer.getName());
+            // Use the correct method to display gender
+            System.out.printf("Gender\t: %s %n", (lecturer.isGender() ? "Male" : "Female"));
+            System.out.printf("Age\t: %d %n", lecturer.getAge());
+            System.out.println("------------------------");
+        }
+
+        // Create an instance of LecturerData14 and call the methods
+        LecturerData14 lecturerData = new LecturerData14();
+        lecturerData.showAllLecturerData(lecturerArray);
+        lecturerData.countLecturerByGender(lecturerArray);
+        System.out.println("------------------------");
+        lecturerData.averageLecturerAgeByGender(lecturerArray);
+        System.out.println("------------------------");
+        lecturerData.showOldestLecturerInfo(lecturerArray);
+        System.out.println("------------------------");
+        lecturerData.showYoungestLecturerInfo(lecturerArray);
+        System.out.println("------------------------");
+    }
+}
