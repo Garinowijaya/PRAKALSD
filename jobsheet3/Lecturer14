@@ -1,0 +1,32 @@
+public class Lecturer14 {
+    private String id;
+    private String name;
+    private boolean gender;  // true for Male, false for Female
+    private int age;
+
+    // Constructor to initialize Lecturer data
+    public Lecturer14(String id, String name, boolean gender, int age) {
+        this.id = id;
+        this.name = name;
+        this.gender = gender;
+        this.age = age;
+    }
+
+    // Getter methods for each field
+    public String getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    // Correct method for gender
+    public boolean isGender() {
+        return gender;
+    }
+
+    public int getAge() {
+        return age;
+    }
+}
