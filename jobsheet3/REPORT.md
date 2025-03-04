@@ -47,12 +47,16 @@ The lab is implemented in Lecturer14.java, LecturerDemo14.java and LecturerDemo1
 Lecturer:
 ![Screenshot (622)](https://github.com/user-attachments/assets/75f7050e-3317-4ca1-a5ed-2fc73a82619a)
 
+
 LecturerDemo:
 ![Cuplikan layar 2025-03-04 203810](https://github.com/user-attachments/assets/e322548e-c962-48ea-9ae1-a1a60552744f)
+
 ![Cuplikan layar 2025-03-04 203845](https://github.com/user-attachments/assets/a6aa35c8-2d4c-4089-a696-c0ae684ff408)
+
 
 LecturerData:
 ![Cuplikan layar 2025-03-04 204041](https://github.com/user-attachments/assets/9c79f51f-a5bd-4998-859d-8dadef027a60)
+
 ![Cuplikan layar 2025-03-04 204502](https://github.com/user-attachments/assets/1fc93662-625d-439c-beaf-b806785ef109)
 
 
