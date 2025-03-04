@@ -1,0 +1,97 @@
+public class LecturerData14 {
+
+    // Method to show all lecturer data
+    public void showAllLecturerData(Lecturer14[] lecturerArray) {
+        System.out.println("All Lecturer Data:");
+        for (Lecturer14 lecturer : lecturerArray) {
+            System.out.printf("ID\t: %s %n", lecturer.getId());
+            System.out.printf("Name\t: %s %n", lecturer.getName());
+            System.out.printf("Gender\t: %s %n", (lecturer.isGender() ? "Male" : "Female"));
+            System.out.printf("Age\t: %d %n", lecturer.getAge());
+            System.out.println("------------------------");
+        }
+    }
+
+    // Method to count lecturers by gender
+    public void countLecturerByGender(Lecturer14[] lecturerArray) {
+        int maleCount = 0;
+        int femaleCount = 0;
+
+        for (Lecturer14 lecturer : lecturerArray) {
+            if (lecturer.isGender()) {  // Male
+                maleCount++;
+            } else {  // Female
+                femaleCount++;
+            }
+        }
+
+        System.out.println("Lecturer Count by Gender:");
+        System.out.println("Male: " + maleCount);
+        System.out.println("Female: " + femaleCount);
+    }
+
+    // Method to calculate the average age of lecturers by gender
+    public void averageLecturerAgeByGender(Lecturer14[] lecturerArray) {
+        int maleAgeSum = 0;
+        int femaleAgeSum = 0;
+        int maleCount = 0;
+        int femaleCount = 0;
+
+        for (Lecturer14 lecturer : lecturerArray) {
+            if (lecturer.isGender()) {  // Male
+                maleAgeSum += lecturer.getAge();
+                maleCount++;
+            } else {  // Female
+                femaleAgeSum += lecturer.getAge();
+                femaleCount++;
+            }
+        }
+
+        System.out.println("Average Age by Gender:");
+        if (maleCount > 0) {
+            System.out.println("Average age of Male Lecturers: " + (maleAgeSum / maleCount));
+        } else {
+            System.out.println("No male lecturers.");
+        }
+
+        if (femaleCount > 0) {
+            System.out.println("Average age of Female Lecturers: " + (femaleAgeSum / femaleCount));
+        } else {
+            System.out.println("No female lecturers.");
+        }
+    }
+
+    // Method to show the information of the oldest lecturer
+    public void showOldestLecturerInfo(Lecturer14[] lecturerArray) {
+        Lecturer14 oldestLecturer = lecturerArray[0];
+
+        for (Lecturer14 lecturer : lecturerArray) {
+            if (lecturer.getAge() > oldestLecturer.getAge()) {
+                oldestLecturer = lecturer;
+            }
+        }
+
+        System.out.println("Oldest Lecturer Info:");
+        System.out.printf("ID\t: %s %n", oldestLecturer.getId());
+        System.out.printf("Name\t: %s %n", oldestLecturer.getName());
+        System.out.printf("Gender\t: %s %n", (oldestLecturer.isGender() ? "Male" : "Female"));
+        System.out.printf("Age\t: %d %n", oldestLecturer.getAge());
+    }
+
+    // Method to show the information of the youngest lecturer
+    public void showYoungestLecturerInfo(Lecturer14[] lecturerArray) {
+        Lecturer14 youngestLecturer = lecturerArray[0];
+
+        for (Lecturer14 lecturer : lecturerArray) {
+            if (lecturer.getAge() < youngestLecturer.getAge()) {
+                youngestLecturer = lecturer;
+            }
+        }
+
+        System.out.println("Youngest Lecturer Info:");
+        System.out.printf("ID\t: %s %n", youngestLecturer.getId());
+        System.out.printf("Name\t: %s %n", youngestLecturer.getName());
+        System.out.printf("Gender\t: %s %n", (youngestLecturer.isGender() ? "Male" : "Female"));
+        System.out.printf("Age\t: %d %n", youngestLecturer.getAge());
+    }
+}
