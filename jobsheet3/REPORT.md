@@ -41,7 +41,8 @@ The lab is implemented in ArrayBlocks14.java and Blocks14.java
 4. ![Cuplikan layar 2025-03-04 203306](https://github.com/user-attachments/assets/85e86b25-9639-46d2-8048-1d81f2b9022f)
 5. ![Cuplikan layar 2025-03-04 203413](https://github.com/user-attachments/assets/dcfe1c39-5051-463c-9f49-e5c0664404bf)
 
-1.5. Assignment
+## 1.5. Assignment
+
 The lab is implemented in Lecturer14.java, LecturerDemo14.java and LecturerDemo14.java
 
 Lecturer:
