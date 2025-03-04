@@ -30,7 +30,7 @@ Questions:
    4. ![Cuplikan layar 2025-03-04 202331](https://github.com/user-attachments/assets/ece23542-30c8-488a-9d97-cd2cf9b8dccf)
    5. The previous object is lost, retaining only the latest assigned object.
 
-1.4. Mathematical operation in array of object’s attribute
+## 1.4. Mathematical operation in array of object’s attribute
 
 The lab is implemented in ArrayBlocks14.java and Blocks14.java
 
