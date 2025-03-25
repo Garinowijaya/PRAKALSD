@@ -70,15 +70,21 @@ Therefore, this process helps sort students in ascending order by GPA using Sele
 ## 6.3.13 Question's Answer : 
 Modified insertionSort() method : 
 
-![image](https://github.com/user-attachments/assets/7283ae74-71c2-4d86-944d-94e7724ad820)
+![Cuplikan layar 2025-03-25 085052](https://github.com/user-attachments/assets/32318aa6-c35d-42d2-ac61-91dffc3c01b5)
 
 We just have to change the ">" into "<" for descending between the j > 0 && listStudent[j-1].gpa < temp.gpa
 
 ## 6.4 Assignment
 ## Assignment Result :
 
-![image](https://github.com/user-attachments/assets/940b94b8-3966-4004-bcdb-b898c3b2731f)
+![Cuplikan layar 2025-03-25 090021](https://github.com/user-attachments/assets/a1dd5176-4608-461b-a792-00af772fd738)
 
-![image](https://github.com/user-attachments/assets/00e79741-cbd3-44a0-85b2-b6d1eb767a00)
+![Cuplikan layar 2025-03-25 090049](https://github.com/user-attachments/assets/5cacf40b-271a-4829-820d-538d9db3aef3)
+
+![Cuplikan layar 2025-03-25 090152](https://github.com/user-attachments/assets/a1cfd20b-752b-4b95-a1b3-427d28c88996)
+
+![Cuplikan layar 2025-03-25 090347](https://github.com/user-attachments/assets/0d6fdd87-643b-4ae5-9312-5e9bbf9d7b0a)
+
+
 
 ![image](https://github.com/user-attachments/assets/4eea06de-d287-4f69-95b6-44a37058a56b)
