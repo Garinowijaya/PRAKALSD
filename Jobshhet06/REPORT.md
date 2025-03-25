@@ -84,7 +84,3 @@ We just have to change the ">" into "<" for descending between the j > 0 && list
 ![Cuplikan layar 2025-03-25 090152](https://github.com/user-attachments/assets/a1cfd20b-752b-4b95-a1b3-427d28c88996)
 
 ![Cuplikan layar 2025-03-25 090347](https://github.com/user-attachments/assets/0d6fdd87-643b-4ae5-9312-5e9bbf9d7b0a)
-
-
-
-![image](https://github.com/user-attachments/assets/4eea06de-d287-4f69-95b6-44a37058a56b)
