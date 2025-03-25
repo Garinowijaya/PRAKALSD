@@ -3,7 +3,7 @@
 | NIM |  244107020230|
 | Nama |  GARINO WIJAYA |
 | Kelas | TI - 1I |
-| Repository | [link] (https://github.com/hanzelputrawollwage/ALSD-Smt2)|
+| Repository | [link] (https://github.com/Garinowijaya/PRAKALSD/blob/main/Jobshhet06/REPORT.md)|
 
 # JOB SHEET 6 REPORT
 
