@@ -47,12 +47,12 @@
 
 2. Modify
 
-![image](https://github.com/user-attachments/assets/b26b0e49-1dbb-4da7-9541-5ed2db0ade1c)
+![Cuplikan layar 2025-03-25 083759](https://github.com/user-attachments/assets/9e9e3ff9-3d24-478d-b93c-b5d57907ffad)
 
 ## 6.3.5 Sorting Student Data Based on GPA (Selection Sort)
 ## 6.3.8 RESULT : 
 
-![image](https://github.com/user-attachments/assets/6378bc95-afef-4345-8fb0-01e30b1f383e)
+![Cuplikan layar 2025-03-25 084051 (2)](https://github.com/user-attachments/assets/9c651e13-ac99-4407-8757-f47644fc511f)
 
 ## 6.3.9 Question's Answer : 
 The code snippet is part of the Selection Sort algorithm. It finds the student with the lowest GPA in the unsorted part of the list.
