@@ -43,8 +43,6 @@
 
 
 ## 7.4 Experiment 3 - Review Divide & Conquer
-![image11](https://github.com/user-attachments/assets/d2ce997a-f1d5-46b6-87f0-d3907a6b6caf)
-
 
 ### 7.4.2 Result
-![Screenshot](img/image11.png)
+![image11](https://github.com/user-attachments/assets/d2ce997a-f1d5-46b6-87f0-d3907a6b6caf)
