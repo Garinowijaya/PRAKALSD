@@ -10,8 +10,10 @@
 ## 7.2 Experiment 1 -Sequential Search Method
 
 ### 7.2.2 Result
-![Screenshot](img/image1.png)
-![Screenshot](img/image2.png)
+![428921744-ec996be8-b81b-4878-b564-3d4e7009bff2](https://github.com/user-attachments/assets/189f0b68-71ba-42d8-8885-24cb6582c455)
+
+![image4](https://github.com/user-attachments/assets/c60cfe12-a6f3-4f57-b112-f2ab56865646)
+
 
 ### 7.2.3 Questions Answer
 1. The difference is `showData()` display the detail of data that is searched, while `showPosition()` only display wether the data is found or not, and the location of the searched data if found
