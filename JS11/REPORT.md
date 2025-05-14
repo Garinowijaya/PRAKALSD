@@ -9,8 +9,9 @@
 
 ## 2.1.2 Result
 
-![experiment1](img/experiment1.png)
-![experiment1](img/experiment12.png)
+![experiment1](https://github.com/user-attachments/assets/ecc228b6-a8f5-4b52-9978-63d166496f65)
+![experiment12](https://github.com/user-attachments/assets/0452857e-9ddc-4ac9-873e-4133fc9d3e0c)
+
 
 **2.1.3 Question** 
 1. In the Queue class, the attributes front and rear are initially set to -1 to inidcate that the queue is currently empty and has no valid front or rear position yet
@@ -20,11 +21,11 @@
 5. This line is used to increment index i while maintaining the circular structure of the queue. by using the modulo operator, the index automatically wraps around to 0 when it reaches max.
 6. A queue overflow occurs when an attempt is made to enqueue data into a queue that is already full. In the program this condition is handled in this line
 
-![Queue Overflow](img/QueueFull.png)
+![QueueFull](https://github.com/user-attachments/assets/35c6013f-fe56-4b9c-8cd9-7de1b69597dc)
 
 7. I modify this method
 
-![Exit](img/Enqueue.png)
+![Enqueue](https://github.com/user-attachments/assets/b1ea9458-2eb6-46cb-8ef4-65b071472729)
 
 ## 2.2.2 Result
 
@@ -40,9 +41,10 @@
 3. The front attribute is initialized to 0 which differs from the Queue class where front is initially -1. This difference is due to a design variation. The StudentQueue class assumes that the front position is always pointing to a valid index, even if the queue is empty.
 4. Program:
 
-![viewRear method](img/viewRear().png)
-![viewRear main](img/main.png)
-![viewRear main](img/main2.png)
+![viewRear()](https://github.com/user-attachments/assets/0b52b92a-f8e2-4598-80da-2aaf873d18af)
+![main](https://github.com/user-attachments/assets/b2775f12-469d-49d0-abe0-51a5ef2b11e2)
+![main2](https://github.com/user-attachments/assets/90c367f6-7189-47db-b62f-5684307535e6)
+
 
 ## 2.3 Assignment
 
