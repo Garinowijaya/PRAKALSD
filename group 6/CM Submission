@@ -1,0 +1,213 @@
+import java.util.Scanner;
+
+// Kelas Kendaraan
+class Kendaraan {
+    String platNomor, tipe, merk;
+
+    public Kendaraan(String plat, String tipe, String merk) {
+        this.platNomor = plat;
+        this.tipe = tipe;
+        this.merk = merk;
+    }
+
+    public void tampilkanInformasi() {
+        System.out.println("Plat Nomor: " + platNomor);
+        System.out.println("Tipe: " + tipe);
+        System.out.println("Merk: " + merk);
+    }
+}
+
+// Kelas BBM
+class BBM {
+    String namaBBM;
+    double hargaPerLiter;
+
+    public BBM(String namaBBM, double harga) {
+        this.namaBBM = namaBBM;
+        this.hargaPerLiter = harga;
+    }
+}
+
+// Kelas TransaksiPengisian
+class TransaksiPengisian {
+    Kendaraan kendaraan;
+    BBM bbm;
+    double liter;
+    double totalBayar;
+
+    public TransaksiPengisian(Kendaraan kendaraan, BBM bbm, double liter) {
+        this.kendaraan = kendaraan;
+        this.bbm = bbm;
+        this.liter = liter;
+        this.totalBayar = bbm.hargaPerLiter * liter;
+    }
+
+    public void tampilkanTransaksi() {
+        System.out.println(kendaraan.platNomor + ": Rp " + totalBayar);
+    }
+}
+
+// Node Linked List
+class NodeKendaraan {
+    Kendaraan data;
+    NodeKendaraan next;
+
+    public NodeKendaraan(Kendaraan data) {
+        this.data = data;
+    }
+}
+
+// Antrian Linked List
+class AntrianKendaraan {
+    NodeKendaraan head, tail;
+
+    public void enqueue(Kendaraan k) {
+        NodeKendaraan baru = new NodeKendaraan(k);
+        if (tail == null) {
+            head = tail = baru;
+        } else {
+            tail.next = baru;
+            tail = baru;
+        }
+    }
+
+    public Kendaraan dequeue() {
+        if (head == null) return null;
+        Kendaraan keluar = head.data;
+        head = head.next;
+        if (head == null) tail = null;
+        return keluar;
+    }
+
+    public void tampilkanAntrian() {
+        System.out.println("-- Antrian Kendaraan --");
+        NodeKendaraan bantu = head;
+        while (bantu != null) {
+            bantu.data.tampilkanInformasi();
+            System.out.println();
+            bantu = bantu.next;
+        }
+    }
+
+    public int hitungAntrian() {
+        int jumlah = 0;
+        NodeKendaraan bantu = head;
+        while (bantu != null) {
+            jumlah++;
+            bantu = bantu.next;
+        }
+        return jumlah;
+    }
+
+    public boolean isEmpty() {
+        return head == null;
+    }
+
+    public Kendaraan peek() {
+        return head != null ? head.data : null;
+    }
+}
+
+// Queue Transaksi
+class QueueTransaksi {
+    TransaksiPengisian[] data;
+    int front, rear, size;
+
+    public QueueTransaksi(int capacity) {
+        data = new TransaksiPengisian[capacity];
+        front = rear = size = 0;
+    }
+
+    public void enqueue(TransaksiPengisian transaksi) {
+        if (size < data.length) {
+            data[rear] = transaksi;
+            rear = (rear + 1) % data.length;
+            size++;
+        } else {
+            System.out.println("Riwayat transaksi penuh!");
+        }
+    }
+
+    public void tampilkanRiwayat() {
+        System.out.println("-- Riwayat Transaksi --");
+        for (int i = 0; i < size; i++) {
+            int index = (front + i) % data.length;
+            data[index].tampilkanTransaksi();
+        }
+    }
+}
+
+// Main
+public class SPBU {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        AntrianKendaraan antrian = new AntrianKendaraan();
+        QueueTransaksi transaksiQueue = new QueueTransaksi(100);
+
+        while (true) {
+            System.out.println("--- Menu SPBU ---");
+            System.out.println("1. Tambah Antrian Kendaraan");
+            System.out.println("2. Tampilkan Antrian");
+            System.out.println("3. Cek Jumlah Antrian Kendaraan");
+            System.out.println("4. Layani Kendaraan");
+            System.out.println("5. Tampilkan Riwayat Transaksi");
+            System.out.println("0. Keluar");
+            System.out.print("Pilih: ");
+            int pilih = sc.nextInt();
+            sc.nextLine();
+
+            switch (pilih) {
+                case 1:
+                    System.out.print("Masukkan Plat Nomor: ");
+                    String plat = sc.nextLine();
+                    System.out.print("Masukkan Jenis Kendaraan: ");
+                    String tipe = sc.nextLine();
+                    System.out.print("Masukkan Merk: ");
+                    String merk = sc.nextLine();
+                    Kendaraan k = new Kendaraan(plat, tipe, merk);
+                    antrian.enqueue(k);
+                    System.out.println(">> Kendaraan masuk ke dalam antrian.\n");
+                    break;
+
+                case 2:
+                    antrian.tampilkanAntrian();
+                    break;
+
+                case 3:
+                    System.out.println(">> Jumlah kendaraan dalam antrian: " + antrian.hitungAntrian() + "\n");
+                    break;
+
+                case 4:
+                    if (antrian.isEmpty()) {
+                        System.out.println(">> Tidak ada kendaraan dalam antrian.\n");
+                        break;
+                    }
+                    Kendaraan dilayani = antrian.dequeue();
+                    System.out.println("Petugas melayani " + dilayani.platNomor);
+                    System.out.print("Masukkan Jenis BBM: ");
+                    String namaBBM = sc.nextLine();
+                    System.out.print("Masukkan Harga per liter: ");
+                    double harga = sc.nextDouble();
+                    System.out.print("Masukkan Jumlah liter: ");
+                    double liter = sc.nextDouble();
+                    sc.nextLine();
+                    BBM bbm = new BBM(namaBBM, harga);
+                    TransaksiPengisian transaksi = new TransaksiPengisian(dilayani, bbm, liter);
+                    transaksiQueue.enqueue(transaksi);
+                    System.out.println(">> Transaksi berhasil dicatat.\n");
+                    break;
+
+                case 5:
+                    transaksiQueue.tampilkanRiwayat();
+                    break;
+
+                case 0:
+                    System.out.println("Terima kasih!");
+                    return;
+
+                default:
+                    System.out.println("Pilihan tidak valid.");
+            }
+        }
+    }
+}
