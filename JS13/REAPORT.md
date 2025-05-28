@@ -3,7 +3,7 @@
 | NIM |  244107020230|
 | Nama | Garino Wijaya |
 | Kelas | TI - 1I |
-| Repository | |
+| Repository | https://github.com/Garinowijaya/PRAKALSD |
 
 # Labs #13 Double LINKED LIST
 
