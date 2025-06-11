@@ -3,7 +3,7 @@
 | NIM | 244107020230 |
 | Name |Garino Wijaya|
 | Class | TI - 1I |
-| Repository | [link] (https://github.com/bimamj/SEMESTER-2-ALSD.git) |
+| Repository | [link] (https://github.com/Garinowijaya/PRAKALSD) |
 
 # Jobsheet XIV Tree
 ## 14.2 Experiment 1
